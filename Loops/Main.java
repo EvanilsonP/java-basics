@@ -8,14 +8,27 @@ public class Main {
         //     System.out.println("Countdown to happy new year: "+ i);
         // }
         // System.out.println("Happy new year!");
+
         Scanner scanner = new Scanner(System.in);
+        // String message = "";
+
+        // while(!message.equals("quit")) {
+        //     System.out.print("Input: ");
+        //     message = scanner.nextLine().toLowerCase();
+        //     System.out.println(message);
+        // }
+
+        // scanner.close();
+        
         String message = "";
 
-        while(!message.equals("quit")) {
+        do {
             System.out.print("Input: ");
             message = scanner.nextLine().toLowerCase();
             System.out.println(message);
-        }
+            
+            
+        } while (!message.equals("quit"));
 
         scanner.close();
     }
