@@ -4,33 +4,33 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // for(int i = 5; i > 0; i--) {
-        //     System.out.println("Countdown to happy new year: "+ i);
-        // }
-        // System.out.println("Happy new year!");
+        for(int i = 5; i > 0; i--) {
+            System.out.println("Countdown to happy new year: "+ i);
+        }
+        System.out.println("Happy new year!");
 
         Scanner scanner = new Scanner(System.in);
-        // String message = "";
+        String message = "";
 
-        // while(!message.equals("quit")) {
-        //     System.out.print("Input: ");
-        //     message = scanner.nextLine().toLowerCase();
-        //     System.out.println(message);
-        // }
+        while(!message.equals("quit")) {
+            System.out.print("Input: ");
+            message = scanner.nextLine().toLowerCase();
+            System.out.println(message);
+        }
 
-        // scanner.close();
+        scanner.close();
         
         // String message = "";
 
-        // do {
-        //     System.out.print("Input: ");
-        //     message = scanner.nextLine().toLowerCase();
-        //     System.out.println(message);
+        do {
+            System.out.print("Input: ");
+            message = scanner.nextLine().toLowerCase();
+            System.out.println(message);
             
             
-        // } while (!message.equals("quit"));
+        } while (!message.equals("quit"));
 
-        // scanner.close();
+        scanner.close();
 
         String input = "";
 
@@ -53,6 +53,22 @@ public class Main {
             } else {
                 System.out.println(input);
             }
+        }
+
+        String[] fruits = { "apple", "orange", "mango" };
+        // for loop
+        for(int i = 0; i < fruits.length; i++) {
+            System.out.println(fruits[i]);
+        }
+
+        for(int i = fruits.length; i > 0; i--) {
+            System.out.println(i);
+        }
+
+        System.out.println();
+        // forEach loop
+        for (String fruit : fruits) {
+            System.out.println(fruit);
         }
         
         scanner.close();
