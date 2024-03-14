@@ -17,7 +17,7 @@ public class exercise06 {
             double discount = purchase * percentage10;
             double total = purchase - discount;
 
-            System.out.println("Você tem um disconto de " + discount + " R$ e pagará apenas " + total + " R$");
+            System.out.println("Você tem um desconto de " + discount + " R$ e pagará apenas " + total + " R$");
 
         } else if(purchase >= 100 && purchase <= 200) {
             double discount = purchase * percentage5;
